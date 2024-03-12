@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica 6 Formularios en HTML para registro del CLIENTE</title>
+  </head>
+  <body>
+    <h1>Formularios en HTML para registro del CLIENTE</h1>
+
+    <hr />
+    <div>
+      <form action="">
+        <label for="">Nombre del cliente</label>
+        <input
+          type="text"
+          placeholder="ingresa tu nombre"
+          value="Moreno Treviño Avril Valeria"
+        />
+        <br />
+        <br />
+        <label for="">Edad</label>
+        <input type="number" placeholder="Teclea tu Edad" />
+        <br />
+        <br />
+
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" name="Fecha de nacimiento" />
+
+        <br /><br />
+
+        <label for="">Escuela</label>
+
+        <select>
+          <option value="">Selecciona la Escualela</option>
+          <option value="CETis 107°">CETis 107°</option>
+          <option value="CBTIS">CBTIS</option>
+          <option value="UAS">UAS</option>
+        </select>
+
+        <br /><br />
+        <label for=""> Selecciona un color</label>
+        <input type="color" />
+        <br /><br />
+
+        <label for="">Sexo:</label>
+        <input type="radio" name="Sexo" />Masculino
+        <input type="radio" name="Sexo" />Femenino
+        <input type="radio" name="Sexo" />Otro <br /><br />
+
+        <label for="">Pasatiempos</label><br>
+        <input type="checkbox" /> Escuchar Musica<br />
+        <input type="checkbox" /> Bailar<br />
+        <input type="checkbox" /> Ver series <br />
+        <br />
+
+        <label for="">Comentarios</label><br />
+        <textarea cols="100" rows="10">Comentarios</textarea>
+        <br />
+
+        <label for="">Selector de una foto</label>
+        <input type="file" />
+        <br />
+
+        <input type="submit" value="Guardar Cliente" />
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>
