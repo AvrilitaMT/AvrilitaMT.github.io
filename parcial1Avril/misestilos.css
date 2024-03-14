@@ -1,0 +1,22 @@
+.parrafo{
+    border: 1px solid #283e06;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    color:#02253d ;
+    font-size: larger;
+    font-weight: 500;
+}
+div{
+    border: 2px solid #283e06;
+    color: #02253d;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 15px;
+
+}
+span ul li{
+    color: #02253d;
+    font-style: oblique;
+    font-weight: 700;
+}
