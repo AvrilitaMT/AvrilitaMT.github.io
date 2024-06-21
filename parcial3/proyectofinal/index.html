@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto final parcial 3</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
-    avril moreno
+    <div class="container">
+        <h1 style="border: 2px solid olivedrab; margin: 50px; padding: 20px;">Proyecto Final Parcial 3</h1>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card"> SELECT * FROM alumnos;</h3>
+                <p>Consula #1. Obtener el listado de todos los alumbnos de la facultad.</p>
+                <img src="selec alumnos.png" alt="" class="img-fluid">
+            </div>
+        </div><br><br>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h3>
+                <p>Consula #2. Mostrar el curso y el nomnre de la asignatura.</p>
+                <img src="consulta2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <script> src="js/boostrap.js"</script>
 </body>
 </html>
