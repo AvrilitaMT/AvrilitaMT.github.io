@@ -24,6 +24,47 @@
                 <img src="consulta2.png" alt="" class="img-fluid">
             </div>
         </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">Consula #3. Obtener listado (nombre y apellido) de los alumnos que tengan beca.</h3>
+                <p>SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE beca LIKE 'si'</p>
+                <img src="consulta3.png" alt="" class="img-fluid">
+            </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">Consula #4. Obtener listado de profesores con nombre y apellido, y su numero de contacto.</h3>
+                <p>SELECT profesor.nombre, profesor.apellido1, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof;</p>
+                <img src="consulta4.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">Consula #5. Obtener listado de alumnos (todos los campos) que estan inscritos a la asignatura de programacion.</h3>
+                <p>SELECT * FROM alumno INNER JOIN asignatura WHERE asignatura.idAsignatura LIKE 'AS009';</p>
+                <img src="consulta5.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">Consula #6. Obtener listado de profesores y asignaturas que imparten.</h3>
+                <p>SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura; </p>
+                <img src="consulta6.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">Consula #7. Mostrar la asignaturas que tiene mas alumnos inscritos y su total.</h3>
+                <p></p>
+                <img src="" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">Consula #8. Obtener listado de alumnos que les da clase el profesor con id pro48 (jose Manuel), sin importar en que asignatura este inscrito.</h3>
+                <p> </p>
+                <img src="" alt="" class="img-fluid">
+            </div>
+        </div>
     </div>
     <script> src="js/boostrap.js"</script>
 </body>
