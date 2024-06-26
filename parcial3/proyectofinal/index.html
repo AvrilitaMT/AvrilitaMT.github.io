@@ -54,15 +54,35 @@
         <div class="row mt-2">
             <div class="col">
                 <h3 class="card">Consula #7. Mostrar la asignaturas que tiene mas alumnos inscritos y su total.</h3>
-                <p></p>
-                <img src="" alt="" class="img-fluid">
+                <p>SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC;</p>
+                <img src="consulta7.png" alt="" class="img-fluid">
             </div>
         </div>
         <div class="row mt-2">
             <div class="col">
                 <h3 class="card">Consula #8. Obtener listado de alumnos que les da clase el profesor con id pro48 (jose Manuel), sin importar en que asignatura este inscrito.</h3>
-                <p> </p>
-                <img src="" alt="" class="img-fluid">
+                <p> SELECT alumno.nombre,profesor.nombre FROM alumno INNER JOIN profesor INNER JOIN impartir ON impartir.idProfesor="PR048" INNER JOIN matricula on impartir.idAsignatura=matricula.idAsignatura; </p>
+                <img src="consulta8.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">Consula #9. Obtener listado de cursos, con asignatura y el maestro que las imparte.</h3>
+                <p>SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso=curso.idCurso INNER JOIN profesor ON asignatura.coordinador=profesor.idProfesor;</p>
+                <img src="consulta9.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card">Consula #10. Obtener listado de alumnos, con asignaturas que cursa, profesor que la imparte y el curso al que pertenece .</h3>
+                <p>SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo
+                    FROM alumno
+                    INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno
+                    INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura
+                    INNER JOIN impartir ON impartir.idAsignatura=asignatura.idasignatura
+                    INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor
+                    INNER JOIN curso ON curso.idCurso=asignatura.curso;</p>
+                <img src="consulta10.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
