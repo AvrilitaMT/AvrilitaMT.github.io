@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            <div class="row">
+                <h1>Exámen de programación</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        1. ¿Cual es tu pareja favorita de grey`s? (Selecciona 2)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta1" value="Dereck y Meredith" required> Dereck y Meredith </p>
+                            <p><input type="checkbox" name="pregunta1" value="Mark y Lexie" required> Mark y Lexie </p>
+                            <p><input type="checkbox" name="pregunta1" value="Arizona y Callie" required> Arizona y Callie </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4">
+                        <p>
+                            2. <input type="text" name="pregunta2" required> es la especialidad de Dereck Shepard.
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        3. ¿Cual personaje esta vivo? 
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta3[]" value="Alex Karev" > Alex Karev </p>
+                            <p><input type="radio" name="pregunta3[]" value="Lexie Grey" > Lexie Grey </p>
+                            <p><input type="radio" name="pregunta3[]" value="Adele Webber" > Adele Webber </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4">
+                        <p>
+                            4. <input type="text" name="pregunta4" required> es la especialidad de Mark Slone.
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        5. ¿Cual personaje odias mas? 
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta5[]" value="Owen Hunt" > Owen Hunt </p>
+                            <p><input type="radio" name="pregunta5[]" value="Arizona Robbins" > Arizona Robbins </p>
+                            <p><input type="radio" name="pregunta5[]" value="melia Shepard" > Amelia Shepard </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4">
+                        <p>
+                            6. <input type="text" name="pregunta6" required> es la especialidad de Meredit Grey.
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        7. ¿Cual personaje es te gusta mas? 
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta7[]" value="April Keppner" > April Keppner </p>
+                            <p><input type="radio" name="pregunta7[]" value="Alex Karev" > Alex Karev </p>
+                            <p><input type="radio" name="pregunta7[]" value="Jackson Avery" > Jackson Avery </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4">
+                        <p>
+                            8. <input type="text" name="pregunta8" required> es la especialidad de Alex Karev.
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        9. ¿Cuales son tus especialidades favoritas? 
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta9" value="Dereck y Meredith" required> Cardiologia </p>
+                            <p><input type="checkbox" name="pregunta9" value="Mark y Lexie" required> Neurocirugia </p>
+                            <p><input type="checkbox" name="pregunta9" value="Arizona y Callie" required> Cirugia Plastica </p>
+                            <p><input type="checkbox" name="pregunta9" value="Dereck y Meredith" required> Cirugia General </p>
+                            <p><input type="checkbox" name="pregunta9" value="Mark y Lexie" required> Traumatologia </p>
+                            <p><input type="checkbox" name="pregunta9" value="Arizona y Callie" required> Urologia </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4">
+                        <p>
+                            10. <input type="text" name="pregunta10" required> es la especialidad de Mark Slone.
+                        </p>
+                    </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+        </form>
+    </div>
+</body>
+</html>
