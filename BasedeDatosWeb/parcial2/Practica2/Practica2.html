@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Dado Animado con Tailwind UI</title>
+    <script src="practica2.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 p-8">
+    <div class="mb-4">
+        <h1 class="text-3xl font-extrabold text-gray-900">Practica de Dado con Animación</h1>
+    </div>
+
+    <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="p-6">
+
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-lg text-gray-700">Mostrar Texto</span>
+                <button id="toggleSwitch" onclick="Muestra_texto()" type="button"
+                    class="relative inline-flex items-center h-6 rounded-full w-11 bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    <span class="sr-only">Toggle</span>
+                    <span id="toggleThumb"
+                        class="inline-block w-4 h-4 transform bg-white rounded-full translate-x-1 transition-transform"></span>
+                </button>
+            </div>
+
+            <div id="texto" class="mt-4 mb-4 text-lg text-gray-800"></div>
+
+            <button onclick="lanzarDado()"
+                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                Lanzar Dado
+            </button>
+
+            <div id="resultadoNumero" class="mt-4 text-lg text-gray-700"></div>
+
+            <div id="caraDado" class="mt-2 text-6xl font-bold text-center text-gray-900"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
